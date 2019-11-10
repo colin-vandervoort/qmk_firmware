@@ -26,35 +26,35 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
      KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_MPLY,          KC_CAPS, KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT,
   //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
-                                    KC_LCTL, KC_LALT, KC_LGUI,                   KC_SPC,  LOWER,   RAISE
+                                    KC_LGUI, KC_LALT, KC_LCTL,                   KC_SPC,  LOWER,   RAISE
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
   ),
 
   [_LOWER] = LAYOUT(
   //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
-     KC_TILD, KC_KP_7, KC_KP_8, KC_KP_9, KC_PSLS, KC_PEQL,                            XXXXXXX, XXXXXXX, XXXXXXX, DEBUG,   EEP_RST, RESET,
+     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                            XXXXXXX, XXXXXXX, XXXXXXX, DEBUG,   EEP_RST, RESET,
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_BSPC, KC_KP_4, KC_KP_5, KC_KP_6, KC_PAST, KC_LBRC,                            KC_RBRC, KC_F9,   KC_F10,  KC_F11,  KC_F12,  KC_DEL,
+     KC_PAST, KC_PEQL, KC_KP_7, KC_KP_8, KC_KP_9, KC_LBRC,                            KC_RBRC, KC_F9,   KC_F10,  KC_F11,  KC_F12,  KC_DEL,
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_ENT,  KC_KP_1, KC_KP_2, KC_KP_3, KC_PMNS, KC_LPRN,                            KC_RPRN, KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_QUOT,
+     KC_PSLS, KC_PMNS, KC_KP_4, KC_KP_5, KC_KP_6, KC_LPRN,                            KC_RPRN, KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_BSPC,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     _______, KC_COMM, KC_KP_0, KC_DOT,  KC_PPLS, KC_LCBR, _______,          _______, KC_RCBR, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_BSLS,
+     XXXXXXX, KC_PPLS, KC_KP_1, KC_KP_2, KC_KP_3, KC_LCBR, _______,          _______, KC_RCBR, KC_F1,   KC_F2,   KC_F3,   KC_F4,   XXXXXXX,
   //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
-                                    _______, _______, _______,                    _______, _______, _______
+                                    KC_KP_0, KC_DOT,  _______,                   _______, _______, _______
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
   ),
 
   [_RAISE] = LAYOUT(
   //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
-     KC_BTN4, KC_BTN5, XXXXXXX, XXXXXXX, XXXXXXX, RGB_TOG,                            XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                            XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_BTN3, KC_WH_L, KC_MS_U, KC_WH_R, KC_WH_U, RGB_MOD,                            KC_HOME, KC_PGDN, KC_PGUP, KC_END,  XXXXXXX, XXXXXXX,
+     KC_GRV,  KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,                            KC_CIRC, KC_AMPR, KC_ASTR, KC_PIPE, KC_DQUO, KC_BSLS,
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_BTN2, KC_MS_L, KC_MS_D, KC_MS_R, KC_WH_D, RGB_VAI,                            KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_INS,  XXXXXXX,
+     KC_BTN4, KC_BTN2, KC_MS_L, KC_MS_U, KC_MS_D, KC_MS_R,                            KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_UNDS, KC_QUOT,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     XXXXXXX, KC_MUTE, KC_MSTP, KC_MPRV, KC_MNXT, RGB_VAD, _______,          _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+     KC_BTN5, KC_BTN3, KC_WH_L, KC_WH_U, KC_WH_D, KC_WH_R, _______,          _______, KC_HOME, KC_PGDN, KC_PGUP, KC_END,  KC_RCTL, XXXXXXX,
   //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
-                                    _______, _______, KC_BTN1,                   _______, _______, _______
+                                    KC_BTN2, KC_BTN1, _______,                   _______, _______, _______
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
   ),
 
@@ -125,7 +125,11 @@ void encoder_update_user(uint8_t index, bool clockwise) {
         if (clockwise) {
             tap_code(KC_DOWN);
             tap_code(KC_DOWN);
+            tap_code(KC_DOWN);
+            tap_code(KC_DOWN);
         } else {
+            tap_code(KC_UP);
+            tap_code(KC_UP);
             tap_code(KC_UP);
             tap_code(KC_UP);
         }
