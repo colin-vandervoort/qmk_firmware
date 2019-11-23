@@ -34,13 +34,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                            XXXXXXX, XXXXXXX, XXXXXXX, DEBUG,   EEP_RST, RESET,
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_PAST, KC_PEQL, KC_KP_7, KC_KP_8, KC_KP_9, KC_LBRC,                            KC_RBRC, KC_F9,   KC_F10,  KC_F11,  KC_F12,  KC_DEL,
+     KC_PAST, KC_EQL,  KC_7,    KC_8,    KC_9,    KC_LBRC,                            KC_RBRC, KC_F9,   KC_F10,  KC_F11,  KC_F12,  KC_DEL,
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_PSLS, KC_PMNS, KC_KP_4, KC_KP_5, KC_KP_6, KC_LPRN,                            KC_RPRN, KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_BSPC,
+     KC_PSLS, KC_PMNS, KC_4,    KC_5,    KC_6,    KC_LPRN,                            KC_RPRN, KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_BSPC,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     XXXXXXX, KC_PPLS, KC_KP_1, KC_KP_2, KC_KP_3, KC_LCBR, _______,          _______, KC_RCBR, KC_F1,   KC_F2,   KC_F3,   KC_F4,   XXXXXXX,
+     XXXXXXX, KC_PPLS, KC_1,    KC_2,    KC_3,    KC_LCBR, _______,          _______, KC_RCBR, KC_F1,   KC_F2,   KC_F3,   KC_F4,   XXXXXXX,
   //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
-                                    KC_KP_0, KC_DOT,  _______,                   _______, _______, _______
+                                    KC_0,    KC_DOT,  _______,                   _______, _______, _______
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
   ),
 
