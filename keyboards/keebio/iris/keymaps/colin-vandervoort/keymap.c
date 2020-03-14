@@ -24,7 +24,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
      KC_ESC,  KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                               KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_ENT,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_MPLY,          KC_CAPS, KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT,
+     KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_CAPS,          KC_MPLY, KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT,
   //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
                                     KC_LALT, KC_LCTL, KC_SPC,                    LOWER,   RAISE,   KC_LGUI
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
@@ -32,29 +32,29 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_LOWER] = LAYOUT(
   //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
-     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                            XXXXXXX, XXXXXXX, XXXXXXX, DEBUG,   EEP_RST, RESET,
+     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                            XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_PAST, KC_EQL,  KC_7,    KC_8,    KC_9,    KC_LBRC,                            KC_RBRC, KC_F9,   KC_F10,  KC_F11,  KC_F12,  KC_DEL,
+     KC_SLSH, KC_MINS, KC_7,    KC_8,    KC_9,    KC_LBRC,                            KC_RBRC, KC_F9,   KC_F10,  KC_F11,  KC_F12,  KC_DEL,
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_PSLS, KC_PMNS, KC_4,    KC_5,    KC_6,    KC_LPRN,                            KC_RPRN, KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_BSPC,
+     KC_ASTR, KC_EQL,  KC_4,    KC_5,    KC_6,    KC_LPRN,                            KC_RPRN, KC_F5,   KC_F6,   KC_F7,   KC_F8,   _______
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     _______, KC_PPLS, KC_1,    KC_2,    KC_3,    KC_LCBR, _______,          _______, KC_RCBR, KC_F1,   KC_F2,   KC_F3,   KC_F4,   _______,
+     _______, KC_DOT,  KC_1,    KC_2,    KC_3,    KC_LCBR, _______,          _______, KC_RCBR, KC_F1,   KC_F2,   KC_F3,   KC_F4,   _______,
   //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
-                                    KC_0,    KC_DOT,  KC_LCTL,                   _______, _______, _______
+                                    _______, _______, KC_0,                      _______, _______, _______
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
   ),
 
   [_RAISE] = LAYOUT(
   //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
-     RGB_TOG, RGB_HUI, RGB_SAI, RGB_VAI, RGB_M_P, RGB_M_B,                            XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+     RGB_TOG, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                            XXXXXXX, XXXXXXX, XXXXXXX, DEBUG,   EEP_RST, RESET,
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_GRV,  KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,                            KC_CIRC, KC_AMPR, KC_ASTR, KC_PIPE, KC_DQUO, KC_BSLS,
+     KC_GRV,  KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,                            KC_CIRC, KC_AMPR, KC_ASTR, KC_PIPE, KC_DQUO, KC_INS,
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_BTN4, KC_BTN2, KC_MS_L, KC_MS_U, KC_MS_D, KC_MS_R,                            KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_UNDS, KC_QUOT,
+     KC_BTN4, KC_BTN2, KC_MS_L, KC_MS_U, KC_MS_D, KC_MS_R,                            KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_QUOT, _______,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_BTN5, KC_BTN3, KC_WH_L, KC_WH_U, KC_WH_D, KC_WH_R, _______,          _______, KC_HOME, KC_PGDN, KC_PGUP, KC_END,  KC_RCTL, XXXXXXX,
+     KC_BTN3, KC_BTN1, KC_WH_L, KC_WH_U, KC_WH_D, KC_WH_R, _______,          _______, KC_HOME, KC_PGDN, KC_PGUP, KC_END,  KC_BSLS, _______,
   //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
-                                    KC_BTN2, KC_BTN1, KC_LCTL,                   _______, _______, _______
+                                    _______, _______, KC_UNDS,                   _______, _______, _______
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
   ),
 
@@ -116,26 +116,17 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 void encoder_update_user(uint8_t index, bool clockwise) {
     if (index == 0) {
         if (clockwise) {
-            tap_code(KC_VOLU);
+            tap_code(KC_DEL);
         } else {
-            tap_code(KC_VOLD);
+            tap_code(KC_BSPC);
         }
     }
     else if (index == 1) {
         if (clockwise) {
-            tap_code(KC_DOWN);
-            tap_code(KC_DOWN);
-            tap_code(KC_DOWN);
-            tap_code(KC_DOWN);
-            tap_code(KC_DOWN);
-            tap_code(KC_DOWN);
+            tap_code(KC_VOLU);
         } else {
-            tap_code(KC_UP);
-            tap_code(KC_UP);
-            tap_code(KC_UP);
-            tap_code(KC_UP);
-            tap_code(KC_UP);
-            tap_code(KC_UP);
+            tap_code(KC_VOLD);
         }
+
     }
 }
